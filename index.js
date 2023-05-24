@@ -5,7 +5,7 @@ app.get("/", (req,res)=> res.sendFile(__dirname + "/index.html"))
 app.listen(80, ()=>console.log("Listening on http port 80"))
 const websocketServer = require("websocket").server
 const httpServer = http.createServer();
-httpServer.listen(43, () => console.log("Listening.. on 43"))
+httpServer.listen(443, () => console.log("Listening.. on 443"))
 //hashmap clients
 const clients = {};
 const games = {};
