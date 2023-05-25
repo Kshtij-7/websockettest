@@ -2,10 +2,10 @@ const http = require("http");
 const app = require("express")();
 app.get("/", (req,res)=> res.sendFile(__dirname + "/index.html"))
 
-app.listen(80, ()=>console.log("Listening on http port 80"))
+app.listen(8081, ()=>console.log("Listening on http port 8081"))
 const websocketServer = require("websocket").server
 const httpServer = http.createServer();
-httpServer.listen(443, () => console.log("Listening.. on 443"))
+httpServer.listen(8080, () => console.log("Listening.. on 8080"))
 //hashmap clients
 const clients = {};
 const games = {};
